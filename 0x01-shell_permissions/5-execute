@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod 400 betty
+chmod 400 hello
