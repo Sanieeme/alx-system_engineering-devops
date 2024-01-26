@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # script that creates file
-teminator()
+terminator()
 {
 	rm /var/run/myscript.pid
 	exit
