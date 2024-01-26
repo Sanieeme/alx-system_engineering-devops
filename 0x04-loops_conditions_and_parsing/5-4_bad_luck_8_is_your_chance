@@ -4,7 +4,7 @@ var=1
 while [ "$var" -le 10 ]; do
 	if [ "$var" -eq 4 ]
 	then
-		echo "Bad luck"
+		echo "bad luck"
 	elif [ "$var" -eq 8 ]
 	then
 		echo "good luck"
