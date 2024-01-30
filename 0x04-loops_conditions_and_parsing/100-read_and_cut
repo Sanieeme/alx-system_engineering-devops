@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#script that displays the content of the file /etc/passwd
+while IFS= read -r words; do
+	echo "$words" | cut -f 1,3,6 -d ':'
+done < "/etc/passwd"
