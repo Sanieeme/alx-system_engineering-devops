@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+private_key=~/.ssh/school
+
+user=ubuntu
+server_ip=
+
+ssh -i "$private_key" "$user"@"$server_ip"
+
