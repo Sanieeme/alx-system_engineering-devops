@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#Bash script that configures a new Ubuntu machine
+# to respect above requirements (this script will be run on the server itself)
+
+sudo apt-get update -y -qq && \
+	sudo apt-get install nginx -y
+
+sudo service nginx start
+sudo ufw allow 'Nginx HTTP'
+
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chmod -R 755 /var/www
+
+cp /var/www/html/index.nginx.dedian.html /var/www/html/index.nginx.debian.html.bckp
+
+echo -e "Hello World!" > /var/www/html/index.nginx.debian.html
